@@ -1,0 +1,137 @@
+body{
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(5, 243, 247);
+    background: url("./mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.162);
+    z-index: -1;
+}
+.container {
+ background-color: transparent;
+ width: 450px;
+ padding: 60px;
+ backdrop-filter: blur(15px);
+ border: 1px solid rgba(255,255,255,0.83);
+ box-shadow: inset 0 0px rgba(255, 255, 255, 0.871);
+}
+h1{
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-text{
+    width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid #fff;
+    border-radius: 32px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.input-text input {
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    flex: 1;
+    padding-right: 40px;
+}
+.input-text input::placeholder {
+    font-size: 16px;
+    color: #fff;
+}
+.input-text i {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    right: 16px;
+}
+.input-text input:focus {
+    outline: none;
+    border-radius: 32px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px white;
+    transition: box-shadow 0.12s;
+}
+.remember-me {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    /* text-decoration: none; */
+
+}
+.remember-me p {
+    padding: 0;
+    margin: 0;
+}
+.remember-me a {
+    text-decoration: none;
+    color: #fff;
+}
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.submit-btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 32px;
+    border: none;
+    margin: 30px auto;
+    transition: background-color 0.12s box-shadow 0.12s;
+}
+
+.submit-btn:hover {
+    background-color: #d3d3d3;
+
+}
+.submit-btn:active {
+background-color: #fff;
+box-shadow: 0 0 6px white;
+}
+.register {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.register a {
+    font-weight: 600;
+    text-decoration: none;
+    color:#fff;
+}
+.register p {
+    margin-top: 0;
+}
+.register a:hover {
+    text-decoration: underline;
+}
